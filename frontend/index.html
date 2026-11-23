@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroVault</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/api.js" defer></script>
+    <script src="/js/components.js" defer></script>
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <h1>🎮 RetroVault</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar jogos...">
+        </div>
+        <div class="stats-summary" id="stats-summary">
+            <!-- Stats will be injected here -->
+        </div>
+    </header>
+
+    <div class="app-container">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Filtros</h2>
+            </div>
+            <ul class="console-list" id="console-list">
+                <!-- Consoles injected here -->
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="grid-controls" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+                <div class="sort-controls" style="display: flex; gap: 8px; align-items: center;">
+                    <span style="color: var(--text-muted); font-size: 0.85rem;">Ordenar por:</span>
+                    <button id="sort-name" class="btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Nome</button>
+                    <button id="sort-date" class="btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Data</button>
+                    <button id="sort-rating" class="btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Avaliação</button>
+                </div>
+                <div class="page-size-controls" style="display: flex; align-items: center; gap: 12px;">
+                    <span id="results-count" style="color: var(--text-muted); font-size: 0.85rem; font-weight: bold;"></span>
+                    <label style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">Exibir:
+                        <select id="select-per-page" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border); border-radius: 4px; padding: 6px 10px; cursor: pointer;">
+                            <option value="50">50 jogos</option>
+                            <option value="100">100 jogos</option>
+                            <option value="250">250 jogos</option>
+                            <option value="2000">Todos os jogos</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="game-grid" id="game-grid">
+                <!-- Game cards injected here -->
+            </div>
+            <div id="loading-spinner" class="loading-spinner hidden"></div>
+
+            <!-- Pagination Bar -->
+            <div class="pagination-bar" id="pagination-bar" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin: 30px 0 20px; flex-wrap: wrap;">
+                <!-- Pagination injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-content" id="game-modal-content">
+            <!-- Game details injected here -->
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content" id="settings-modal-content">
+            <!-- Settings injected here -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="status-bar">
+            <button id="btn-scan" class="btn-primary">Atualizar Biblioteca</button>
+            <button id="btn-fetch-covers" class="btn-secondary">Buscar Capas</button>
+            <span id="status-text">Pronto.</span>
+        </div>
+    </footer>
+    
+    <div id="toast-container" class="toast-container"></div>
+</body>
+</html>

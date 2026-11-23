@@ -1,0 +1,28 @@
+# Ambientes Virtuais Python
+backend/venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Banco de dados e capas baixadas
+data/covers/
+data/*.db
+data/*.sqlite3
+
+# Logs
+*.log
+launch.log
+
+# Arquivos temporários e testes locais
+check_retro.py
+test_launch.py
+update_config*.py
+
+# Atalhos específicos do Windows
+*.lnk

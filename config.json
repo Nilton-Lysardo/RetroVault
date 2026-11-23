@@ -1,0 +1,278 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "language": "pt-BR"
+  },
+  "rom_directories": {
+    "SNES": [
+      "d:/Documentos Nilton/Games/Rons Consoles/SNES"
+    ],
+    "NES": [
+      "d:/Documentos Nilton/Games/Rons Consoles/NES"
+    ],
+    "Mega Drive": [
+      "d:/Documentos Nilton/Games/Rons Consoles/SMD/Mega Drive",
+      "d:/Documentos Nilton/Games/Mega Drive/Jogos MD player/Jogos do Mega"
+    ],
+    "Sega 32X": [
+      "d:/Documentos Nilton/Games/Rons Consoles/32X",
+      "d:/Documentos Nilton/Games/Rons Consoles/SMD/32X"
+    ],
+    "Mega CD": [
+      "d:/Documentos Nilton/Games/Rons Consoles/SMD/Mega CD"
+    ],
+    "Master System": [
+      "d:/Documentos Nilton/Games/Rons Consoles/SMS"
+    ],
+    "Game Boy": [
+      "d:/Documentos Nilton/Games/Rons Consoles/GB"
+    ],
+    "Game Boy Color": [
+      "d:/Documentos Nilton/Games/Rons Consoles/GBC"
+    ],
+    "Game Boy Advance": [
+      "d:/Documentos Nilton/Games/Rons Consoles/GBA"
+    ],
+    "PS1": [
+      "d:/Documentos Nilton/Games/Rons Consoles/PS1",
+      "d:/Documentos Nilton/Games/Pen Drive Ps Classic (Beckap)/Games"
+    ],
+    "Neo Geo": [
+      "d:/Documentos Nilton/Games/Rons Consoles/NEOGEO"
+    ],
+    "MAME": [
+      "d:/Documentos Nilton/Games/Rons Consoles/MAME"
+    ],
+    "PC Engine": [
+      "d:/Documentos Nilton/Games/Rons Consoles/PCE"
+    ],
+    "Atari 2600": [
+      "d:/Documentos Nilton/Games/Rons Consoles/2600"
+    ],
+    "Atari Lynx": [
+      "d:/Documentos Nilton/Games/Rons Consoles/LYNX"
+    ],
+    "WonderSwan": [
+      "d:/Documentos Nilton/Games/Rons Consoles/WSWAN"
+    ],
+    "Pokemon Mini": [
+      "d:/Documentos Nilton/Games/Rons Consoles/POKEMINI"
+    ],
+    "Nintendo DS": [
+      "d:/Documentos Nilton/Games/Rons Consoles/Rons Nintendo DS"
+    ],
+    "PC": [
+      "d:/Documentos Nilton/Games/Rons Consoles/PC"
+    ]
+  },
+  "rom_extensions": {
+    "SNES": [
+      ".smc",
+      ".sfc",
+      ".fig",
+      ".swc"
+    ],
+    "NES": [
+      ".nes",
+      ".unf",
+      ".unif"
+    ],
+    "Mega Drive": [
+      ".md",
+      ".bin",
+      ".gen",
+      ".smd"
+    ],
+    "Sega 32X": [
+      ".32x",
+      ".bin"
+    ],
+    "Mega CD": [
+      ".iso",
+      ".bin",
+      ".cue",
+      ".chd"
+    ],
+    "Master System": [
+      ".sms",
+      ".sg"
+    ],
+    "Game Boy": [
+      ".gb"
+    ],
+    "Game Boy Color": [
+      ".gbc"
+    ],
+    "Game Boy Advance": [
+      ".gba"
+    ],
+    "PS1": [
+      ".bin",
+      ".cue",
+      ".iso",
+      ".img",
+      ".pbp",
+      ".PBP",
+      ".chd"
+    ],
+    "Neo Geo": [
+      ".zip",
+      ".7z"
+    ],
+    "MAME": [
+      ".zip",
+      ".7z"
+    ],
+    "PC Engine": [
+      ".pce",
+      ".cue",
+      ".chd"
+    ],
+    "Atari 2600": [
+      ".a26",
+      ".bin"
+    ],
+    "Atari Lynx": [
+      ".lnx"
+    ],
+    "WonderSwan": [
+      ".ws",
+      ".wsc"
+    ],
+    "Pokemon Mini": [
+      ".min"
+    ],
+    "Nintendo DS": [
+      ".nds",
+      ".dsi"
+    ],
+    "PC": [
+      ".exe",
+      ".bat",
+      ".lnk"
+    ]
+  },
+  "emulators": {
+    "SNES": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/snes9x_libretro.dll\" \"{rom}\""
+    },
+    "Mega Drive": {
+      "name": "Kega Fusion",
+      "path": "d:/Documentos Nilton/Games/Emuladores/Fusion.exe",
+      "args": "\"{rom}\""
+    },
+    "Master System": {
+      "name": "Kega Fusion",
+      "path": "d:/Documentos Nilton/Games/Emuladores/Fusion.exe",
+      "args": "\"{rom}\""
+    },
+    "Sega 32X": {
+      "name": "Kega Fusion",
+      "path": "d:/Documentos Nilton/Games/Emuladores/Fusion.exe",
+      "args": "\"{rom}\""
+    },
+    "Mega CD": {
+      "name": "RetroArch (Genesis Plus GX)",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/genesis_plus_gx_libretro.dll\" \"{rom}\""
+    },
+    "Neo Geo": {
+      "name": "RetroArch (FBNeo)",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/fbneo_libretro.dll\" \"{rom}\""
+    },
+    "MAME": {
+      "name": "RetroArch (MAME 2003+)",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/mame2003_plus_libretro.dll\" \"{rom}\""
+    },
+    "NES": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/mesen_libretro.dll\" \"{rom}\""
+    },
+    "Game Boy": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/gambatte_libretro.dll\" \"{rom}\""
+    },
+    "Game Boy Color": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/gambatte_libretro.dll\" \"{rom}\""
+    },
+    "Game Boy Advance": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/mgba_libretro.dll\" \"{rom}\""
+    },
+    "PS1": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/pcsx_rearmed_libretro.dll\" \"{rom}\""
+    },
+    "PC Engine": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/mednafen_pce_fast_libretro.dll\" \"{rom}\""
+    },
+    "Atari 2600": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/stella_libretro.dll\" \"{rom}\""
+    },
+    "Atari Lynx": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/handy_libretro.dll\" \"{rom}\""
+    },
+    "WonderSwan": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/mednafen_wswan_libretro.dll\" \"{rom}\""
+    },
+    "Pokemon Mini": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/pokemini_libretro.dll\" \"{rom}\""
+    },
+    "Nintendo DS": {
+      "name": "RetroArch",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/melonds_libretro.dll\" \"{rom}\""
+    },
+    "PC": {
+      "name": "RetroArch (DOSBox Pure)",
+      "path": "C:/RetroArch-Win64/retroarch.exe",
+      "args": "-L \"C:/RetroArch-Win64/cores/dosbox_pure_libretro.dll\" \"{rom}\""
+    }
+  },
+  "covers": {
+    "auto_fetch": true,
+    "directory": "d:/Documentos Nilton/Games/RetroVault/data/covers"
+  },
+  "console_icons": {
+    "SNES": "🎮",
+    "NES": "🕹️",
+    "Mega Drive": "🎮",
+    "Sega 32X": "🎮",
+    "Mega CD": "💿",
+    "Master System": "🕹️",
+    "Game Boy": "📱",
+    "Game Boy Color": "📱",
+    "Game Boy Advance": "📱",
+    "PS1": "💿",
+    "Neo Geo": "🕹️",
+    "MAME": "🕹️",
+    "PC Engine": "🎮",
+    "Atari 2600": "🕹️",
+    "Atari Lynx": "📱",
+    "WonderSwan": "📱",
+    "Pokemon Mini": "📱",
+    "Nintendo DS": "📱",
+    "PC": "🖥️"
+  }
+}
